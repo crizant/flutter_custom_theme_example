@@ -1,21 +1,56 @@
-include: package:pedantic/analysis_options.yaml
+analyzer:
+  errors:
+    # treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+    # treat missing returns as a warning (not a hint)
+    missing_return: warning
 
 linter:
   rules:
-    always_declare_return_types: true
-    avoid_unused_constructor_parameters: true
-    camel_case_types: true
-    cancel_subscriptions: true
-    file_names: true
-    library_names: true
-    library_prefixes: true
-    lines_longer_than_80_chars: true
-    non_constant_identifier_names: true
-    prefer_const_constructors: true
-    prefer_const_declarations: true
-    prefer_final_fields: true
-    prefer_final_locals: true
-    prefer_single_quotes: true
-    unnecessary_const: true
-    unnecessary_new: true
-    unnecessary_this: true
+    - always_declare_return_types
+    - always_require_non_null_named_parameters
+    - annotate_overrides
+    - avoid_empty_else
+    - avoid_slow_async_io
+    - avoid_types_as_parameter_names
+    - avoid_unused_constructor_parameters
+    - await_only_futures
+    - camel_case_types
+    - cancel_subscriptions
+    - empty_constructor_bodies
+    - file_names
+    - library_names
+    - library_prefixes
+    - lines_longer_than_80_chars
+    - list_remove_unrelated_type
+    - no_duplicate_case_values
+    - non_constant_identifier_names
+    - prefer_asserts_in_initializer_lists
+    - prefer_collection_literals
+    - prefer_conditional_assignment
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_contains
+    - prefer_equal_for_default_values
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_foreach
+    - prefer_initializing_formals
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_iterable_whereType
+    - prefer_single_quotes
+    - prefer_void_to_null
+    - recursive_getters
+    - sort_pub_dependencies
+    - unnecessary_brace_in_string_interps
+    - unnecessary_const
+    - unnecessary_new
+    - unnecessary_null_aware_assignments
+    - unnecessary_null_in_if_null_operators
+    - unnecessary_overrides
+    - unnecessary_parenthesis
+    - unnecessary_statements
+    - unnecessary_this
+    - valid_regexps
